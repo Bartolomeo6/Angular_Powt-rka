@@ -1,0 +1,14 @@
+<span><strong> App's Title: {{ title }} </strong></span>
+<div *ngIf="showComm">Gimme My Communicate</div>
+<span *ngIf="password.length < 6"> Hasło: {{password}}</span>
+<div *ngIf="!showComm">
+Brak komunikatu</div><br>
+Lista elementów: <ol type="I" title="Element tablicy, zadeklarowanej w komponencie aplikacji">
+  <li *ngFor="let x of tablica"> {{x}} </li>
+</ol>
+
+<div>Osoby:
+  <ul style="list-style-type:georgian; list-style-position: inside;">
+    <li *ngFor="let user of users"> {{ user}} </li>
+  </ul>
+</div>
